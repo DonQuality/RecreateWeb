@@ -11,7 +11,7 @@
       <nav>
         <ul role="group">
           <li id="showDropMenu" role="treeitem">Browse
-            <ol id="dropMenu" hidden>
+            <ol id="dropMenu" hidden aria-hidden="true">
               <li role="treeitem">Home</li>
               <li role="treeitem">My List</li>
               <li role="treeitem">New Arrivals</li>
@@ -26,33 +26,44 @@
             <form action="http://www.example.com/search.php"
               method="post"
               name="search">
-              <label id="showSearchBar">Search</label>
+              <label for="search"id="showSearchBar">Search</label>
               <input type="text" name="search"
-              placeholder="titles, people, genres" aria-required="true" hidden>
+              placeholder="titles, people, genres" aria-required="true" hidden aria-hidden="true">
             </form>
           </li>
           <li id="el-signIn" role="treeitem">
             <img role="alert" src="images/fb.png"
             alt="Sign in with your facebook account" title="Facebook Sign In">
           </li>
-          <li role="treeitem">UserName</li>
+          <li class="show-menu-drop" role="treeitem">UserName
+            <ol class="menu-drop-down" hidden>
+              <li>UserName</li>
+              <li>Kids</li>
+              <li>Manage Profiles</li>
+              <li>Your Account</li>
+              <li>Help Center</li>
+              <li>Sing Out Of Netflix</li>
+            </ol>
+          </li>
         </ul>
       </nav>
     </header>
-    <section id="billboard-title-card">
-      <h1>Watch Mr.Peabody and Sherman</h1>
-      <figure>
-        <img  title="Mr. Peabody and Sherman"
-        src="images/ps.png" alt="Mr. Peabody and Cherman Movie" disable>
-        <figcaption>
-          <p>Resurrected from the <em>1960s </em>animated series
-            <br>"Rocky and Bullwinckle,"canine genius<strong> Mr.
-            <br>Peabody and young Sherman</strong> take a dizzying
-            <br>ride through time. More Info.
-          </p>
-        </figcaption>
-      </figure>
-    </section>
+    <article>
+      <section id="billboard-title-card">
+        <h1>Watch Mr.Peabody and Sherman</h1>
+        <figure>
+          <img  title="Mr. Peabody and Sherman"
+          src="images/ps.png" alt="Mr. Peabody and Cherman Movie" disable>
+          <figcaption>
+            <p>Resurrected from the <em>1960s </em>animated series
+              <br>"Rocky and Bullwinckle,"canine genius<strong> Mr.
+              <br>Peabody and young Sherman</strong> take a dizzying
+              <br>ride through time. More Info.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+    </article>
     <footer>&copy; someYear</footer>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
