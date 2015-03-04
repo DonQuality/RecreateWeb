@@ -8,7 +8,7 @@ $('#showSearchBar').on('click', function(){
 
 $('[role="alert"]').on('click', function(){
   $('<p>Connect to start receiving private recommendations \n from your friends</p>').appendTo('#el-signIn').delay(4000).fadeOut(500);
-  $('[role="alert"]').hide().delay(4050).fadeIn(200);
+  $('[role="alert"]').hide().delay(4050).fadeIn(250);
 });
 
 
