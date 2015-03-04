@@ -16,7 +16,7 @@ $('.show-menu-drop').on('click', function(){
   $('.menu-drop-down').slideToggle(150);
 })
 
+// var user = prompt('hello, what\'s your name?');
 
-
-
+// $('<h2> Top picks for ' + user).appendTo('.topPics');
 
