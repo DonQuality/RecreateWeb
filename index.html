@@ -7,46 +7,36 @@
   </head>
   <body>
     <header>
-      <h1><span role="button">NETFLIX</span></h1>
+      <h1 class="main-logo" role="main">NETFLIX</h1>
       <nav>
-        <section>
-          <h1 role="main" hidden>Main Menu</h1>
-          <ul role="group">
-            <li id="showDropMenu" role="treeitem">Browse
-              <div id="dropMenu" hidden>
-                <ol>
-                  <li role="treeitem">Home</li>
-                  <li role="treeitem">My List</li>
-                  <li role="treeitem">New Arrivals</li>
-                  <li role="treeitem">Subtitles and Captions</li>
-                  <li role="treeitem">Ways To Watch</li>
-                </ol>
-              </div>
-            </li>
-            <li role="treeitem">Personalize</li>
-            <li role="treeitem">Kids</li>
-            <li role="treeitem">DVDs</li>
-          </ul>
-        </section>
-        <section>
-          <h1 hidden>Sub Menu</h1>
-          <ul role="group">
-            <li role="treeitem">
-              <form action="http://www.example.com/search.php"
-              method="post"
-              name="search">
-              <label id="showSearchBar">Search</label>
-                <input type="text" name="search"
-                placeholder="titles, people, genres" aria-required="true" hidden>
-              </form>
-            </li>
-            <li role="treeitem">
-              <img role="alert" src="images/fb.png"
-              alt="Sign in with facebook account" title="Facebook Sign In">
-            </li>
-            <li role="treeitem">UserName</li>
-          </ul>
-        </section>
+        <ul role="group">
+          <li id="showDropMenu" role="treeitem">Browse
+            <ol id="dropMenu"hidden>
+              <li role="treeitem">Home</li>
+              <li role="treeitem">My List</li>
+              <li role="treeitem">New Arrivals</li>
+              <li role="treeitem">Subtitles and Captions</li>
+              <li role="treeitem">Ways To Watch</li>
+            </ol>
+          </li>
+          <li role="treeitem">Personalize</li>
+          <li role="treeitem">Kids</li>
+          <li role="treeitem">DVDs</li>
+          <li role="treeitem">
+            <form action="http://www.example.com/search.php"
+            method="post"
+            name="search">
+            <label id="showSearchBar">Search</label>
+              <input type="text" name="search"
+              placeholder="titles, people, genres" aria-required="true" hidden>
+            </form>
+          </li>
+          <li id="el-signIn" role="treeitem">
+            <img role="alert" src="images/fb.png"
+            alt="Sign in with your facebook account" title="Facebook Sign In">
+          </li>
+          <li role="treeitem">UserName</li>
+        </ul>
       </nav>
     </header>
     <section id="billboard-title-card">
@@ -62,6 +52,7 @@
         </figcaption>
       </figure>
     </section>
+    <footer>copyrights 2015</footer>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
   </body>
