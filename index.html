@@ -7,11 +7,12 @@
   </head>
   <body>
     <header>
-      <h1 class="main-logo" role="main">NETFLIX</h1>
-      <nav>
+      <h1 class="logo" role="main">NETFLIX</h1>
+      <nav role="navigation">
+      <!-- Fisrt Menu -->
         <ul role="group">
-          <li id="showDropMenu" role="treeitem">Browse
-            <ol id="dropMenu" hidden aria-hidden="true">
+          <li class="showDropMenu" role="treeitem">Browse
+            <ol class="dropMenu" hidden aria-hidden="true">
               <li role="treeitem">Home</li>
               <li role="treeitem">My List</li>
               <li role="treeitem">New Arrivals</li>
@@ -22,16 +23,19 @@
           <li role="treeitem">Personalize</li>
           <li role="treeitem">Kids</li>
           <li role="treeitem">DVDs</li>
+        </ul>
+        <!-- 2nd Menu Begins Here -->
+        <ul>
           <li role="treeitem">
             <form action="http://www.example.com/search.php"
               method="post"
               name="search">
-              <label for="search"id="showSearchBar">Search</label>
+              <label for="search" class="showSearchBar">Search</label>
               <input type="text" name="search"
               placeholder="titles, people, genres" aria-required="true" hidden aria-hidden="true">
             </form>
           </li>
-          <li id="el-signIn" role="treeitem">
+          <li class="el-signIn" role="treeitem">
             <img role="alert" src="images/fb.png"
             alt="Sign in with your facebook account" title="Facebook Sign In">
           </li>
@@ -49,7 +53,7 @@
       </nav>
     </header>
     <article>
-      <section id="billboard-title-card">
+      <section class="billboard-title-card">
         <h1>Watch Mr.Peabody and Sherman</h1>
         <figure>
           <img  title="Mr. Peabody and Sherman"
